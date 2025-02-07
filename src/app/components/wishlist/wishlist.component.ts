@@ -48,7 +48,7 @@ export class WishlistComponent implements OnInit {
    this.getwishSub = this._WishlistService.deleteProductFromWishlist(p_id).subscribe({
       next:(res)=>{console.log(res.data)
         this.wishlistItems = res.data
-        console.log(this.wishlistItems)
+        
         
       },
       error:(err)=>{console.log(err)}

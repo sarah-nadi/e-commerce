@@ -2,9 +2,9 @@
     <h1 class="fw-bold h3 my-3">My Wish List</h1>
     
         <div class="row ">
-           @for (item of wishlistItems; track item._id) {
+           @for (item of wishlistItems; track item.id){
             <div class="content d-flex justify-content-evenly border-bottom border-2">
-                <div class="col-2 p-2">
+                <div class="col-md-2 p-2">
                     <img class="w-100" [src]="item.imageCover" [alt]="item.description">
                 </div>
                 <div class="col-8 p-2 pt-4">

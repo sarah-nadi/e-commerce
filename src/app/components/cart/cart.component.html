@@ -13,7 +13,7 @@
         <div class="container">
             @for (item of cartData.products; track item.product._id) {
                 <div class="row border-bottom border-2">
-                    <div class="col-2 p-2">
+                    <div class="col-md-2 p-2">
                         <img class="w-75" [src]="item.product.imageCover" alt="">
                     </div>
                     <div class="col-8 p-2 pt-4">
